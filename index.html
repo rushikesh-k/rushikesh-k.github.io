@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RAJENDRA ART</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
@@ -17,32 +17,35 @@
     />
   </head>
   <body>
+    <nav>
+      <div id="menu-id" class="menu">
+        <ul>
+          <li>
+            <div class="brand"><a href="#">rajendra art</a></div>
+          </li>
+          <!-- <li><a href="#" class="menu-item">Home</a></li> -->
+          <li><a href="#aboutus" class="menu-item">About Us</a></li>
+          <li><a href="#gallery" class="menu-item">Gallery</a></li>
+          <li><a href="#contactus" class="menu-item">Contact Us</a></li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              class="drawer-icon"
+              onclick="myFunction()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="full-screen-video background-tint">
       <video autoplay muted loop>
         <source src="videos/Painting - 960.mp4" type="video/mp4" />
       </video>
-      <div class="full-screen-content"></div>
-      <nav>
-        <div id="menu-id" class="menu">
-          <ul>
-            <li>
-              <div class="brand"><a href="#">rajendra art</a></div>
-            </li>
-            <li><a href="#aboutus" class="menu-item">About Us</a></li>
-            <li><a href="#gallary" class="menu-item">Gallery</a></li>
-            <li><a href="#contactus" class="menu-item">Contact Us</a></li>
-            <li>
-              <a
-                href="javascript:void(0);"
-                class="drawer-icon"
-                onclick="myFunction()"
-              >
-                <i class="fa fa-bars"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="container home">
+        <h4>Home</h4>
+      </div>
 
       <a href="#aboutus" class="scroll-down">
         <div class="mouse"><span></span></div>
@@ -50,13 +53,18 @@
       </a>
     </div>
     <div id="aboutus">
-      <div class="full-screen-content">About Us</div>
+      <div class="container aboutus">
+        <h4>About Us</h4>
+      </div>
     </div>
-    <div id="gallary" class="background-tint">
-      <div class="full-screen-content">Gallary</div>
+    <div id="gallery" class="background-tint">
+      <div class="container gallery">
+        <h4>Gallery</h4>
+      </div>
     </div>
     <div id="contactus">
-      <div class="container">
+      <div class="container contactus">
+        <h4>Contact Us</h4>
         <div class="box">
           <div class="icon">
             <i class="fa fa-map-marker-alt"></i>
