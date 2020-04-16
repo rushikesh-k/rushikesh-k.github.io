@@ -18,52 +18,49 @@
   </head>
   <body>
     <nav>
-      <div id="menu-id" class="menu">
-        <ul>
-          <li>
-            <div class="brand"><a href="#">rajendra art</a></div>
-          </li>
-          <!-- <li><a href="#" class="menu-item">Home</a></li> -->
-          <li><a href="#aboutus" class="menu-item">About Us</a></li>
-          <li><a href="#gallery" class="menu-item">Gallery</a></li>
-          <li><a href="#contactus" class="menu-item">Contact Us</a></li>
-          <li>
-            <a
-              href="javascript:void(0);"
-              class="drawer-icon"
-              onclick="myFunction()"
-            >
-              <i class="fa fa-bars"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="brand"><a href="#">rajendra art</a></div>
+      <ul>
+        <li>
+          <a
+            href="javascript:void(0);"
+            class="drawer-icon"
+            onclick="drawerClick()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+      </ul>
     </nav>
-    <div class="full-screen-video background-tint">
-      <video autoplay muted loop>
+    <div id="home">
+      <!-- <div id="home" class="full-screen-video background-tint"></div> -->
+      <!-- <video autoplay muted loop>
         <source src="videos/Painting - 960.mp4" type="video/mp4" />
-      </video>
-      <div class="container home">
+      </video> -->
+      <!-- <div class="container home">
         <h4>Home</h4>
       </div>
 
       <a href="#aboutus" class="scroll-down">
         <div class="mouse"><span></span></div>
         <div class="arrow"><span></span></div>
-      </a>
+      </a> -->
     </div>
     <div id="aboutus">
-      <div class="container aboutus">
+      <!-- <div class="container aboutus">
         <h4>About Us</h4>
-      </div>
+      </div> -->
     </div>
     <div id="gallery" class="background-tint">
-      <div class="container gallery">
+      <!-- <div class="container gallery">
         <h4>Gallery</h4>
-      </div>
+      </div> -->
     </div>
     <div id="contactus">
-      <div class="container contactus">
+      <!-- <div class="container contactus">
         <h4>Contact Us</h4>
         <div class="box">
           <div class="icon">
@@ -86,19 +83,48 @@
             <h3>rajendraart@xyz.com</h3>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <footer>
       <div class="brand">Designed by <a href="#">devcrafts</a></div>
       <a href="#"><i class="fas fa-chevron-up"></i></a>
     </footer>
     <script>
-      function myFunction() {
-        var x = document.getElementById("menu-id");
-        if (x.className === "menu") {
-          x.className += " responsive";
+      function drawerClick() {
+        // var x = document.getElementsByTagName("nav ul");
+        // if (x.className === "menu") {
+        //   x.className += " responsive";
+        // } else {
+        //   x.className = "menu";
+        // }
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        const parallax = document.querySelector("#home");
+        let scrollPosition = window.pageYOffset;
+        parallax.style.transform =
+          "translateY(-" + scrollPosition * 0.5 + "px)";
+
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.querySelectorAll("nav a")[0].style.padding = "0rem 1rem";
+          document.querySelectorAll("nav .brand a")[0].style.fontSize =
+            "1.2rem";
+          document.querySelectorAll("nav .brand a")[0].style.color = "#fff";
+          document.querySelector("nav").style.backgroundColor =
+            "hsla(201, 100%, 6%, 0.6)";
+          /* "hsla(29, 53%, 42%, 0.6)"; */
         } else {
-          x.className = "menu";
+          document.querySelectorAll("nav a")[0].style.padding = "1.2rem 1rem";
+          document.querySelectorAll("nav .brand a")[0].style.fontSize = "2rem";
+          document.querySelectorAll("nav .brand a")[0].style.color = "#000";
+          document.querySelector("nav").style.backgroundColor = "";
         }
       }
     </script>
