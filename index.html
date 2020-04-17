@@ -29,13 +29,13 @@
             <i class="fa fa-bars"></i>
           </a>
         </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contactus">Contact Us</a></li>
+        <li><a class="menuitem" href="#">Home</a></li>
+        <li><a class="menuitem" href="#aboutus">About Us</a></li>
+        <li><a class="menuitem" href="#gallery">Gallery</a></li>
+        <li><a class="menuitem" href="#contactus">Contact Us</a></li>
       </ul>
     </nav>
-    <div id="home">
+    <div id="home" class="background-tint">
       <!-- <div id="home" class="full-screen-video background-tint"></div> -->
       <!-- <video autoplay muted loop>
         <source src="videos/Painting - 960.mp4" type="video/mp4" />
@@ -49,7 +49,7 @@
         <div class="arrow"><span></span></div>
       </a> -->
     </div>
-    <div id="aboutus">
+    <div id="aboutus" class="background-tint">
       <!-- <div class="container aboutus">
         <h4>About Us</h4>
       </div> -->
@@ -59,7 +59,7 @@
         <h4>Gallery</h4>
       </div> -->
     </div>
-    <div id="contactus">
+    <div id="contactus" class="background-tint">
       <!-- <div class="container contactus">
         <h4>Contact Us</h4>
         <div class="box">
@@ -91,40 +91,50 @@
     </footer>
     <script>
       function drawerClick() {
-        // var x = document.getElementsByTagName("nav ul");
-        // if (x.className === "menu") {
-        //   x.className += " responsive";
-        // } else {
-        //   x.className = "menu";
-        // }
+        if (document.querySelectorAll("nav .menuitem.responsive").length > 0) {
+          var c = document.querySelectorAll("nav .menuitem.responsive");
+          for (var i in c) {
+            c[i].className = "menuitem";
+          }
+        } else {
+          var c = document.querySelectorAll("nav .menuitem");
+          for (var i in c) {
+            c[i].className += " responsive";
+          }
+        }
       }
 
+      var x = window.matchMedia("(min-width: 30em)");
+
       window.onscroll = function () {
-        scrollFunction();
+        scrollFunction(x);
+        x.addListener(scrollFunction);
       };
 
-      function scrollFunction() {
-        const parallax = document.querySelector("#home");
-        let scrollPosition = window.pageYOffset;
-        parallax.style.transform =
-          "translateY(-" + scrollPosition * 0.5 + "px)";
-
-        if (
-          document.body.scrollTop > 80 ||
-          document.documentElement.scrollTop > 80
-        ) {
-          document.querySelectorAll("nav a")[0].style.padding = "0rem 1rem";
-          document.querySelectorAll("nav .brand a")[0].style.fontSize =
-            "1.2rem";
-          document.querySelectorAll("nav .brand a")[0].style.color = "#fff";
-          document.querySelector("nav").style.backgroundColor =
-            "hsla(201, 100%, 6%, 0.6)";
-          /* "hsla(29, 53%, 42%, 0.6)"; */
-        } else {
-          document.querySelectorAll("nav a")[0].style.padding = "1.2rem 1rem";
-          document.querySelectorAll("nav .brand a")[0].style.fontSize = "2rem";
-          document.querySelectorAll("nav .brand a")[0].style.color = "#000";
-          document.querySelector("nav").style.backgroundColor = "";
+      function scrollFunction(x) {
+        // const parallax = document.querySelector("#home");
+        // let scrollPosition = window.pageYOffset;
+        // parallax.style.transform =
+        //   "translateY(-" + scrollPosition * 0.5 + "px)";
+        if (x.matches) {
+          if (
+            document.body.scrollTop > 80 ||
+            document.documentElement.scrollTop > 80
+          ) {
+            document.querySelectorAll("nav a")[0].style.padding = "0rem 1rem";
+            document.querySelectorAll("nav .brand a")[0].style.fontSize =
+              "1.2rem";
+            document.querySelectorAll("nav .brand a")[0].style.color = "#fff";
+            document.querySelector("nav").style.backgroundColor =
+              "hsla(201, 100%, 6%, 0.6)";
+            /* "hsla(29, 53%, 42%, 0.6)"; */
+          } else {
+            document.querySelectorAll("nav a")[0].style.padding = "1.2rem 1rem";
+            document.querySelectorAll("nav .brand a")[0].style.fontSize =
+              "2rem";
+            document.querySelectorAll("nav .brand a")[0].style.color = "#000";
+            document.querySelector("nav").style.backgroundColor = "";
+          }
         }
       }
     </script>
