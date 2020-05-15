@@ -1,142 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/aec692e7e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RAJENDRA ART</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
+    <title>Rajendra Arts</title>
   </head>
   <body>
-    <nav>
-      <div class="brand"><a href="#">rajendra art</a></div>
-      <ul>
-        <li>
-          <a
-            href="javascript:void(0);"
-            class="drawer-icon"
-            onclick="drawerClick()"
-          >
-            <i class="fa fa-bars"></i>
+    <!-- header -->
+    <header>
+      <nav class="nav-wrapper purple darken-3 sticky-nav">
+        <div class="container">
+          <a href="#" class="brand-logo">RAJENDRA ART</a
+          ><a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
           </a>
-        </li>
-        <li><a class="menuitem" href="#">Home</a></li>
-        <li><a class="menuitem" href="#aboutus">About Us</a></li>
-        <li><a class="menuitem" href="#gallery">Gallery</a></li>
-        <li><a class="menuitem" href="#contactus">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div id="home" class="background-tint">
-      <!-- <div id="home" class="full-screen-video background-tint"></div> -->
-      <!-- <video autoplay muted loop>
-        <source src="videos/Painting - 960.mp4" type="video/mp4" />
-      </video> -->
-      <!-- <div class="container home">
-        <h4>Home</h4>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+          <ul class="sidenav purple lighten-4 white-text" id="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- photo grid -->
+    <section class="container section scrollspy" id="aboutus">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="images/oekaki-2009817.jpg" alt="" class="responsive-img" />
+        </div>
+        <div class="col s12 l6 offset-l1 right-align">
+          <h2 class="purple-text text-darken-4">About Us</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
       </div>
+      <div class="row">
+        <div class="col s12 l4 push-l6 offset-l1">
+          <img
+            src="images/color-pencil-1022033.jpg"
+            alt=""
+            class="responsive-img"
+          />
+        </div>
+        <div class="col s12 l6 pull-l5">
+          <h2 class="purple-text text-darken-4">Our Vision</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="images/kids-1.jpg" alt="" class="responsive-img" />
+        </div>
+        <div class="col s12 l6 offset-l1 right-align">
+          <h2 class="purple-text text-darken-4">Philosophy</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <a href="#aboutus" class="scroll-down">
-        <div class="mouse"><span></span></div>
-        <div class="arrow"><span></span></div>
-      </a> -->
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="images/school-tools.jpg" alt="" class="responsive-img" />
+      </div>
     </div>
-    <div id="aboutus" class="background-tint">
-      <!-- <div class="container aboutus">
-        <h4>About Us</h4>
-      </div> -->
+    <!-- gallary -->
+    <div class="container section scrollspy" id="gallery">
+      <h2 class="purple-text text-darken-4">Gallary</h2>
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"
+          ><img src="https://lorempixel.com/800/400/food/1"
+        /></a>
+        <a class="carousel-item" href="#two!"
+          ><img src="https://lorempixel.com/800/400/food/2"
+        /></a>
+        <a class="carousel-item" href="#three!"
+          ><img src="https://lorempixel.com/800/400/food/3"
+        /></a>
+        <a class="carousel-item" href="#four!"
+          ><img src="https://lorempixel.com/800/400/food/4"
+        /></a>
+      </div>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
     </div>
-    <div id="gallery" class="background-tint">
-      <!-- <div class="container gallery">
-        <h4>Gallery</h4>
-      </div> -->
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img
+          src="images/back-to-school-1576791.jpg"
+          alt=""
+          class="responsive-img"
+        />
+      </div>
     </div>
-    <div id="contactus" class="background-tint">
-      <!-- <div class="container contactus">
-        <h4>Contact Us</h4>
-        <div class="box">
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="purple-text text-darken-4">Get In Touch</h2>
           <div class="icon">
             <i class="fa fa-map-marker-alt"></i>
-            <h4>Address</h4>
-            <h3>Dahisar West</h3>
+            <h5>Address</h5>
+            <h6>Dahisar West</h6>
           </div>
-        </div>
-        <div class="box">
           <div class="icon">
             <i class="fa fa-phone-alt"></i>
-            <h4>Mobile</h4>
-            <h3>+91 98********</h3>
+            <h5>Mobile</h5>
+            <h6>+91 98********</h6>
           </div>
-        </div>
-        <div class="box">
           <div class="icon">
             <i class="fa fa-envelope"></i>
-            <h4>Email</h4>
-            <h3>rajendraart@xyz.com</h3>
+            <h5>Email</h5>
+            <h6>rajendraart@xyz.com</h6>
           </div>
         </div>
-      </div> -->
-    </div>
-    <footer>
-      <div class="brand">Designed by <a href="#">devcrafts</a></div>
-      <a href="#"><i class="fas fa-chevron-up"></i></a>
+        <div class="col s12 l5 offset-l2">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <div class="input-field">
+            <button class="btn waves-effect waves-light purple darken-4">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="page-footer grey darken-4 center">
+      <div class="footer-copyright">
+        <div class="container">
+          designed by
+          <a href="#" class="purple-text text-lighten-3">devcrafts</a>
+        </div>
+      </div>
     </footer>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      function drawerClick() {
-        if (document.querySelectorAll("nav .menuitem.responsive").length > 0) {
-          var c = document.querySelectorAll("nav .menuitem.responsive");
-          for (var i in c) {
-            c[i].className = "menuitem";
-          }
-        } else {
-          var c = document.querySelectorAll("nav .menuitem");
-          for (var i in c) {
-            c[i].className += " responsive";
-          }
-        }
-      }
-
-      var x = window.matchMedia("(min-width: 30em)");
-
-      window.onscroll = function () {
-        scrollFunction(x);
-        x.addListener(scrollFunction);
-      };
-
-      function scrollFunction(x) {
-        // const parallax = document.querySelector("#home");
-        // let scrollPosition = window.pageYOffset;
-        // parallax.style.transform =
-        //   "translateY(-" + scrollPosition * 0.5 + "px)";
-        if (x.matches) {
-          if (
-            document.body.scrollTop > 80 ||
-            document.documentElement.scrollTop > 80
-          ) {
-            document.querySelectorAll("nav a")[0].style.padding = "0rem 1rem";
-            document.querySelectorAll("nav .brand a")[0].style.fontSize =
-              "1.2rem";
-            document.querySelectorAll("nav .brand a")[0].style.color = "#fff";
-            document.querySelector("nav").style.backgroundColor =
-              "hsla(201, 100%, 6%, 0.6)";
-            /* "hsla(29, 53%, 42%, 0.6)"; */
-          } else {
-            document.querySelectorAll("nav a")[0].style.padding = "1.2rem 1rem";
-            document.querySelectorAll("nav .brand a")[0].style.fontSize =
-              "2rem";
-            document.querySelectorAll("nav .brand a")[0].style.color = "#000";
-            document.querySelector("nav").style.backgroundColor = "";
-          }
-        }
-      }
+      $(document).ready(() => {
+        $(".sidenav").sidenav();
+        $(".parallax").parallax();
+        $(".scrollspy").scrollSpy();
+        $(".carousel.carousel-slider").carousel({
+          fullWidth: true,
+          indicators: true,
+        });
+      });
     </script>
   </body>
 </html>
