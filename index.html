@@ -16,6 +16,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
       media="screen,projection"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <!-- custom -->
     <link rel="stylesheet" href="styles/style.css" />
 
     <meta charset="UTF-8" />
@@ -37,22 +43,25 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          <ul class="sidenav purple lighten-4 white-text" id="mobile-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
         </div>
       </nav>
+      <ul class="sidenav" id="mobile-menu">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a class="sidenav-close" href="#aboutus">About Us</a></li>
+        <li><a class="sidenav-close" href="#gallery">Gallery</a></li>
+        <li><a class="sidenav-close" href="#contact">Contact Us</a></li>
+      </ul>
     </header>
     <!-- photo grid -->
-    <section class="container section scrollspy" id="aboutus">
+    <section
+      class="container section scrollspy animate__animated animate__fadeInLeft"
+      id="aboutus"
+    >
       <div class="row">
         <div class="col s12 l4">
           <img src="images/oekaki-2009817.jpg" alt="" class="responsive-img" />
         </div>
-        <div class="col s12 l6 offset-l1 right-align">
+        <div class="col s12 l6 offset-l2 right-align">
           <h2 class="purple-text text-darken-4">About Us</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -68,14 +77,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 l4 push-l6 offset-l1">
+        <div class="col s12 l4 push-l6 offset-l2">
           <img
-            src="images/color-pencil-1022033.jpg"
+            src="images/color-pencil-1022033_1920.jpg"
             alt=""
             class="responsive-img"
           />
         </div>
-        <div class="col s12 l6 pull-l5">
+        <div class="col s12 l6 pull-l6">
           <h2 class="purple-text text-darken-4">Our Vision</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -94,7 +103,7 @@
         <div class="col s12 l4">
           <img src="images/kids-1.jpg" alt="" class="responsive-img" />
         </div>
-        <div class="col s12 l6 offset-l1 right-align">
+        <div class="col s12 l6 offset-l2 right-align">
           <h2 class="purple-text text-darken-4">Philosophy</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -114,37 +123,33 @@
     <!-- parallax -->
     <div class="parallax-container">
       <div class="parallax">
-        <img src="images/school-tools-3596680_1920" alt="" class="responsive-img" />
+        <img
+          src="images/school-tools-3596680_1920.jpg"
+          alt=""
+          class="responsive-img"
+        />
       </div>
     </div>
     <!-- gallary -->
     <div class="container section scrollspy" id="gallery">
       <h2 class="purple-text text-darken-4">Gallary</h2>
-      <div class="carousel carousel-slider">
+      <div class="carousel">
         <a class="carousel-item" href="#one!"
-          ><img src="https://lorempixel.com/800/400/food/1"
+          ><img src="https://lorempixel.com/250/250/nature/1"
         /></a>
         <a class="carousel-item" href="#two!"
-          ><img src="https://lorempixel.com/800/400/food/2"
+          ><img src="https://lorempixel.com/250/250/nature/2"
         /></a>
         <a class="carousel-item" href="#three!"
-          ><img src="https://lorempixel.com/800/400/food/3"
+          ><img src="https://lorempixel.com/250/250/nature/3"
         /></a>
         <a class="carousel-item" href="#four!"
-          ><img src="https://lorempixel.com/800/400/food/4"
+          ><img src="https://lorempixel.com/250/250/nature/4"
+        /></a>
+        <a class="carousel-item" href="#five!"
+          ><img src="https://lorempixel.com/250/250/nature/5"
         /></a>
       </div>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
     </div>
     <!-- parallax -->
     <div class="parallax-container">
@@ -216,10 +221,7 @@
         $(".sidenav").sidenav();
         $(".parallax").parallax();
         $(".scrollspy").scrollSpy();
-        $(".carousel.carousel-slider").carousel({
-          fullWidth: true,
-          indicators: true,
-        });
+        $(".carousel").carousel();
       });
     </script>
   </body>

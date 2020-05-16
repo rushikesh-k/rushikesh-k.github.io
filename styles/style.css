@@ -37,7 +37,3 @@ header {
   overflow: hidden;
   z-index: 99;
 }
-
-.parallax-container {
-  height: 600px;
-}
