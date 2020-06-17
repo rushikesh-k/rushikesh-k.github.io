@@ -119,7 +119,8 @@ h2 {
 
 .container-1,
 .container-2,
-.container-3 {
+.container-3,
+.container-4 {
   margin: 0 auto;
   max-width: 70%;
   display: flex;
@@ -158,7 +159,8 @@ h2 {
 /* about */
 
 #about,
-#experience {
+#experience,
+#contact {
   font-size: 1.4rem;
   text-transform: lowercase;
   text-align: left;
@@ -210,6 +212,16 @@ h2 {
 .container-3 .experienceblock {
   display: flex;
   justify-content: space-between;
+}
+
+.timeline::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 8rem;
+  background-color: rgba(131, 52, 52, 0.6);
+  position: relative;
+  top: 6em;
 }
 
 /* end */
@@ -280,7 +292,7 @@ h2 {
 
 .intro-scroll .scroll-link {
   font-size: 11px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 4px;
   text-align: left;
   color: rgba(68, 68, 68, 0.6);
