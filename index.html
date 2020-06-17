@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/aec692e7e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><a href="#">rk</a></div>
+      <ul>
+        <li><a href="#home">Intro</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="home" class="container-1 section">
+      <div id="intro" data-aos="fade-right">
+        <p>
+          <span class="dark"> hello, i'm </span><br />
+          <span class="highlight"> rushikesh korgaonkar,</span> <br />
+          sr backend programmer currently based in
+          <span class="highlight">thailand</span>
+        </p>
+      </div>
+
+      <div id="intro2" data-aos="fade-left">
+        <p>
+          experienced professional developer specializing in websites, mobile,
+          windows and distributed applications with optimum productivity and
+          excellent troubleshooting techniques
+        </p>
+      </div>
+    </div>
+    <div id="about" class="container-2 section">
+      <div>
+        <h2 data-aos="fade-right">about</h2>
+        <div class="aboutblock">
+          <div id="content-1">
+            <p data-aos="fade-right">
+              7+ years of extensive professional experience and skills in
+              <span class="highlight bold"
+                >programming, site architecture, planning, best coding practices
+                with keen attention to details.</span
+              >
+              Currently learning
+              <span class="highlight bold">Node Js</span> and
+              <span class="highlight bold">React</span> development. Always up
+              to learn and adapt new things. I believe anything can be overcome
+              through commitment and hardwork.
+            </p>
+            <br />
+            <p>
+              Here is my <span class="highlight bold">Technical Stack :</span>
+            </p>
+            <p data-aos="fade-right">
+              <span class="highlight bold">Back End :</span> .net core, restful
+              web api, C#, asp.net, MVC, Entity framework, Node, Express,
+              mongodb, hapi js, sql, JSON, android ( Java ), Web services,
+              Retrofit, Linq, Google API, Firebase, Google Analytics, Amadeus
+              Web Service, Typescript, AJAX, Algorithms, Data Structures,
+              microservices, docker
+            </p>
+            <p data-aos="fade-right">
+              <span class="highlight bold">Front End : </span>React, Javascript,
+              HTML, Jquery, CSS, Bootsrap, Materialize CSS
+            </p>
+            <p data-aos="fade-right">
+              <span class="highlight bold">Process :</span> DevOps, Scrum, Agile
+              Methodology, JIRA, maven, GIT, Teamcity, CI/CD Processes and
+              Automation, Microsoft Teams, Citrix
+            </p>
+            <p data-aos="fade-right">
+              <span class="highlight bold">Soft skills :</span> Team Management,
+              Task Management, Resource utilization, Problem Solving,
+              troubleshooting, Quick learning
+            </p>
+          </div>
+          <div id="content-2" data-aos="fade-left"></div>
+        </div>
+      </div>
+    </div>
+    <div id="experience" class="container-3 section">
+      <div>
+        <h2 data-aos="fade-right">experience</h2>
+        <div class="experienceblock"></div>
+      </div>
+    </div>
+    <!-- <div class="contact">
+      <p>
+        <span class="dark"> contact </span>
+        <span class="highlight"> rushikesh korgaonkar,</span> a sr backend
+        programmer currently based in <span class="highlight">thailand</span>
+      </p>
+    </div> -->
+    <div class="intro-scroll">
+      <a href="#about" class="scroll-link smoothscroll">
+        Scroll For More
+      </a>
+    </div>
+    <!-- end intro scroll -->
+    <ul class="intro-social">
+      <li>
+        <a href="https://github.com/rushikesh-k" target="_blank"
+          ><i class="fab fa-github" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/rushikeshkorgaonkar"
+          target="_blank"
+          ><i class="fab fa-linkedin" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/rushikesh.korgaonkar" target="_blank"
+          ><i class="fab fa-instagram" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/rushikesh.korgaonkar" target="_blank"
+          ><i class="fab fa-facebook" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/rushikesh_k12" target="_blank"
+          ><i class="fab fa-twitter" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 250, duration: 500 });
+    </script>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(() => {
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+          $("nav").addClass("active");
+        } else {
+          $("nav").removeClass("active");
+        }
+      });
+    });
+  </script>
+</html>
