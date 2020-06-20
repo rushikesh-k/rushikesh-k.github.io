@@ -12,6 +12,7 @@ html {
 body {
   height: 100vh;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 }
 
 h2 {
-  color: rgba(131, 52, 52, 0.6);
+  color: rgba(131, 52, 52, 0.8);
 }
 
 /* Navigation Bar */
@@ -60,7 +61,7 @@ h2 {
 
   nav a {
     text-decoration: none;
-    color: rgba(131, 52, 52, 0.6);
+    color: rgba(131, 52, 52, 0.8);
     font-family: "Quicksand", sans-serif;
     font-weight: 600;
     text-transform: lowercase;
@@ -79,7 +80,7 @@ h2 {
     line-height: 2.5;
     font-family: "Open Sans", sans-serif;
     left: 20px;
-    color: rgba(131, 52, 52, 0.6);
+    color: rgba(131, 52, 52, 0.8);
     font-size: 1.2rem;
     letter-spacing: 0.8rem;
     transition: 0.4s;
@@ -103,7 +104,7 @@ h2 {
 }
 
 .highlight {
-  color: rgba(131, 52, 52, 0.6);
+  color: rgba(131, 52, 52, 0.8);
 }
 
 .highlight.bold {
@@ -120,18 +121,23 @@ h2 {
 .container-1,
 .container-2,
 .container-3,
-.container-4 {
+.footer-copyright {
   margin: 0 auto;
   max-width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
+.container-4 {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
 /* introduction */
 #intro {
   flex: 4;
   font-size: 4rem;
-  color: rgba(26, 26, 26, 0.6);
+  color: rgba(26, 26, 26, 0.8);
   font-family: "Montserrat", sans-serif;
   line-height: 1.257;
 }
@@ -141,7 +147,7 @@ h2 {
   display: block;
   height: 2px;
   width: 8rem;
-  background-color: rgba(131, 52, 52, 0.6);
+  background-color: rgba(131, 52, 52, 0.8);
   position: relative;
   top: 2.55em;
 }
@@ -150,7 +156,7 @@ h2 {
   font-size: 2rem;
   flex: 2;
   text-align: right;
-  color: rgba(26, 26, 26, 0.6);
+  color: rgba(26, 26, 26, 0.8);
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   line-height: 1.8;
@@ -164,7 +170,7 @@ h2 {
   font-size: 1.4rem;
   text-transform: lowercase;
   text-align: left;
-  color: rgb(26, 26, 26);
+  color: rgb(20, 20, 20);
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
   line-height: 2;
@@ -197,7 +203,7 @@ h2 {
   display: block;
   height: 2px;
   width: 8rem;
-  background-color: rgba(131, 52, 52, 0.6);
+  background-color: rgba(131, 52, 52, 0.8);
   position: relative;
   right: -12rem;
   top: 34em;
@@ -219,9 +225,45 @@ h2 {
   display: block;
   height: 2px;
   width: 8rem;
-  background-color: rgba(131, 52, 52, 0.6);
+  left: -3%;
+  background-color: rgba(131, 52, 52, 0.8);
   position: relative;
   top: 6em;
+}
+
+/* contact */
+
+.container-4 .contact-grid {
+  padding-top: 5vh;
+  display: flex;
+  /* right: -12rem; */
+  justify-content: space-between;
+}
+
+.container-4 .contact-grid span {
+  margin-left: 1rem;
+}
+
+.container-4 .contact-grid a {
+  color: rgb(20, 20, 20);
+}
+
+.container-4 .contact-grid a:hover {
+  color: rgba(131, 52, 52);
+  border-bottom: 1px solid currentColor;
+}
+
+/* footer */
+
+.footer-copyright .container {
+  font-size: 1.4rem;
+  width: 100vw;
+  text-align: center;
+  text-transform: lowercase;
+  color: rgb(20, 20, 20);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  line-height: 5;
 }
 
 /* end */
@@ -245,7 +287,7 @@ h2 {
 }
 
 .intro-social a {
-  color: rgba(68, 68, 68, 0.6);
+  color: rgba(68, 68, 68, 0.8);
 }
 
 .intro-social a:hover,
@@ -295,7 +337,7 @@ h2 {
   text-transform: lowercase;
   letter-spacing: 4px;
   text-align: left;
-  color: rgba(68, 68, 68, 0.6);
+  color: rgba(68, 68, 68, 0.8);
   padding-left: 9.6rem;
   margin: 0;
   position: relative;
