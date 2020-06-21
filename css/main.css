@@ -7,12 +7,15 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  height: 100vh;
 }
 
 body {
+  /* margin: 0;
+  padding: 0; */
   height: 100vh;
   background-color: #ffffff;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -78,7 +81,7 @@ nav .logo {
   min-width: 2rem;
   min-height: 2rem;
   margin-top: 0.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 nav .logo a {
@@ -106,86 +109,27 @@ nav .logo a:hover {
 /* Navigation Bar */
 @media screen and (min-width: 30em) {
   nav {
-    /* display: flex; */
-    /* flex-direction: row; */
     justify-content: space-between;
-    /* align-items: flex-start; */
-    /* margin: 0; */
-    /* position: fixed; */
-    /* overflow: hidden; */
-    /* width: 100vw; */
-    /* z-index: 99; */
-    /* transition: 0.4s; */
   }
 
-  /* nav.active {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  } */
-
   nav ul {
-    /* display: flex; */
-    /* font-family: "Open Sans", sans-serif; */
-    /* list-style-type: none; */
     padding: 2rem;
-    /* list-style: none; */
-    /* flex-wrap: wrap; */
     padding-right: 2rem;
   }
 
-  /* nav ul li {
-    border: 0;
-    flex: 1 0 auto;
-  } */
-
   nav a {
-    /* text-decoration: none; */
-    /* color: rgba(131, 52, 52, 0.8); */
-    /* font-family: "Quqicksand", sans-serif; */
-    /* font-weight: 600; */
-    /* text-transform: lowercase; */
     font-size: 1.2rem;
-    /* line-height: 1; */
-    /* display: block; */
     padding: 0.2rem 1rem;
   }
 
-  /* nav a:hover {
-    color: #151515;
-  } */
-
   nav .logo {
     background-image: url(../icons/android-chrome-192x192.png);
-    /* background-repeat: no-repeat; */
     background-size: 3rem;
-    /* opacity: 0.8; */
     min-width: 5rem;
     min-height: 3rem;
     margin-top: 1.4rem;
     margin-left: 4rem;
   }
-
-  /* nav .logo a {
-    text-align: center;
-    line-height: 2.5;
-    font-family: "Open Sans", sans-serif;
-    left: 20px;
-    color: rgba(131, 52, 52, 0.8);
-    font-size: 1.2rem;
-    letter-spacing: 0.8rem;
-    transition: 0.4s;
-    margin-left: 1rem;
-    font-size: 2rem;
-    padding-left: 2rem;
-  }
-
-  nav .logo a:hover {
-    background-color: transparent;
-  } */
-
-  /* .drawer-icon {
-    display: none;
-  } */
 }
 /* end */
 
@@ -244,7 +188,7 @@ nav .logo a:hover {
   width: 8rem;
   background-color: rgba(131, 52, 52, 0.8);
   position: relative;
-  top: 11em;
+  top: 13em;
 }
 
 #intro2 {
@@ -303,7 +247,7 @@ nav .logo a:hover {
   width: 8rem;
   background-color: rgba(131, 52, 52, 0.8);
   position: relative;
-  right: -12rem;
+  /* right: -12rem; */
   top: 27em;
 }
 
@@ -381,7 +325,7 @@ nav .logo a:hover {
   padding-bottom: 9.6rem;
   text-align: center;
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   bottom: 0;
   position: fixed;
 }
