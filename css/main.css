@@ -24,6 +24,9 @@ a {
 }
 
 h2 {
+  font-weight: bold;
+  width: 60%;
+  border-bottom: 1px solid currentColor;
   color: rgba(131, 52, 52, 0.8);
 }
 
@@ -161,7 +164,7 @@ nav .logo a:hover {
 .container-3,
 .footer-copyright {
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -169,7 +172,7 @@ nav .logo a:hover {
 
 .container-4 {
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 75%;
 }
 
 /* introduction */
@@ -188,7 +191,7 @@ nav .logo a:hover {
   width: 8rem;
   background-color: rgba(131, 52, 52, 0.8);
   position: relative;
-  top: 13em;
+  top: 11em;
 }
 
 #intro2 {
@@ -233,7 +236,7 @@ nav .logo a:hover {
   margin-top: 3rem;
   min-height: 22rem;
   opacity: 0.8;
-  background-position: top right;
+  background-position: top center;
   filter: grayscale(80%) contrast(120%) brightness(1.4);
   max-height: 22rem;
   max-width: 22rem;
@@ -247,8 +250,7 @@ nav .logo a:hover {
   width: 8rem;
   background-color: rgba(131, 52, 52, 0.8);
   position: relative;
-  /* right: -12rem; */
-  top: 27em;
+  top: 26em;
 }
 
 .container-2 #content-2:hover {
@@ -424,6 +426,10 @@ nav .logo a:hover {
 }
 
 @media screen and (min-width: 30em) {
+  h2 {
+    width: 20%;
+  }
+
   .section {
     padding-top: 20vh;
     padding-bottom: 10vh;
@@ -433,8 +439,14 @@ nav .logo a:hover {
   .container-2,
   .container-3,
   .footer-copyright {
+    max-width: 80%;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+  }
+
+  .container-4 {
+    /* margin: 0 auto; */
+    max-width: 80%;
   }
 
   #intro {
@@ -466,8 +478,13 @@ nav .logo a:hover {
     flex-direction: row;
   }
 
+  .container-2 #content-2 {
+    background-position: top right;
+  }
+
   #content-2::after {
-    top: 34em;
+    top: 30em;
+    right: -14rem;
   }
 
   .container-2 #content-2:hover {
