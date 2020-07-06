@@ -109,33 +109,6 @@ nav .logo a:hover {
   display: none;
 }
 
-/* Navigation Bar */
-@media screen and (min-width: 30em) {
-  nav {
-    justify-content: space-between;
-  }
-
-  nav ul {
-    padding: 2rem;
-    padding-right: 2rem;
-  }
-
-  nav a {
-    font-size: 1.2rem;
-    padding: 0.2rem 1rem;
-  }
-
-  nav .logo {
-    background-image: url(../icons/android-chrome-192x192.png);
-    background-size: 3rem;
-    min-width: 5rem;
-    min-height: 3rem;
-    margin-top: 1.4rem;
-    margin-left: 4rem;
-  }
-}
-/* end */
-
 .dark {
   color: rgba(26, 26, 26, 0.6);
 }
@@ -161,8 +134,7 @@ nav .logo a:hover {
 
 .container-1,
 .container-2,
-.container-3,
-.footer-copyright {
+.container-3 {
   margin: 0 auto;
   max-width: 75%;
   display: flex;
@@ -175,6 +147,13 @@ nav .logo a:hover {
   max-width: 75%;
 }
 
+.footer-copyright {
+  margin: 0 auto;
+  max-width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 /* introduction */
 #intro {
   flex: 2;
@@ -425,7 +404,149 @@ nav .logo a:hover {
   background: rgb(128, 126, 120);
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 40em) and (max-width: 70em) {
+  #intro::after {
+    top: 7em;
+  }
+
+  #content-2::after {
+    top: 28em;
+    /* right: -2rem; */
+  }
+
+  .timeline::after {
+    top: 8em;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 70em) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav ul {
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+  }
+
+  nav .logo {
+    background-image: url(../icons/android-chrome-192x192.png);
+    background-size: 2rem;
+    min-width: 3rem;
+    min-height: 1rem;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+  }
+
+  h2 {
+    width: 20%;
+  }
+
+  .section {
+    padding-top: 25vh;
+    padding-bottom: 10vh;
+  }
+
+  .container-1,
+  .container-2,
+  .container-3,
+  .footer-copyright {
+    max-width: 80%;
+    /* flex-direction: row; */
+    justify-content: space-between;
+  }
+
+  .container-4 {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  #intro::after {
+    top: 7em;
+  }
+
+  .container-2 .aboutblock {
+    flex-direction: row;
+  }
+
+  .container-2 #content-2 {
+    background-position: top right;
+  }
+
+  #content-2::after {
+    top: 35em;
+    right: -2rem;
+  }
+
+  .timeline::after {
+    top: 12em;
+  }
+
+  .footer-copyright .container {
+    font-size: 1.2rem;
+    width: 100vw;
+    text-align: center;
+    line-height: 5;
+    padding-top: 0;
+  }
+
+  .intro-social {
+    font-size: 14px;
+    right: 2rem;
+    padding-bottom: 6.6rem;
+  }
+  .intro-social li {
+    margin-bottom: 0.7rem;
+  }
+
+  .intro-social::before {
+    height: 5.8rem;
+  }
+
+  .intro-scroll {
+    left: 2rem;
+  }
+
+  .intro-scroll .scroll-link {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 6.6rem;
+  }
+
+  .intro-scroll::before {
+    width: 5.8rem;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav ul {
+    padding: 2rem;
+    padding-right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+  }
+
+  nav .logo {
+    background-image: url(../icons/android-chrome-192x192.png);
+    background-size: 3rem;
+    min-width: 5rem;
+    min-height: 3rem;
+    margin-top: 1.4rem;
+    margin-left: 4rem;
+  }
+
   h2 {
     width: 20%;
   }
