@@ -154,6 +154,7 @@ nav .logo a:hover {
   flex-direction: row;
   justify-content: space-between;
 }
+
 /* introduction */
 #intro {
   flex: 2;
@@ -216,7 +217,7 @@ nav .logo a:hover {
   min-height: 22rem;
   opacity: 0.8;
   background-position: top center;
-  filter: grayscale(80%) contrast(120%) brightness(1.4);
+  filter: grayscale(40%) contrast(110%) brightness(1.3);
   max-height: 22rem;
   max-width: 22rem;
   flex: 1;
@@ -500,6 +501,7 @@ nav .logo a:hover {
     right: 2rem;
     padding-bottom: 6.6rem;
   }
+
   .intro-social li {
     margin-bottom: 0.7rem;
   }
