@@ -10,6 +10,7 @@
   <link rel="manifest" href="icons/site.webmanifest" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/timeline.css" />
+  <link rel="stylesheet" href="css/particles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css" />
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -27,7 +28,7 @@
 <body>
   <nav>
     <div class="logo">
-      <!-- <a href="#">rk</a> -->
+      <a href="#">rk</a>
     </div>
     <ul>
       <li><a href="#home">Intro</a></li>
@@ -36,13 +37,16 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+  <div id="particles-js">
+
+  </div>
   <div id="home" class="container-1 section">
     <div id="intro" data-aos="fade-right">
       <p>
         <span class="dark"> hello, i'm </span><br />
         <span class="highlight"> rushikesh korgaonkar,</span> <br />
-        tech lead - fullstack developer currently based in<br />
-        <span class="highlight">thailand</span>
+        <span class="dark">tech lead - fullstack developer currently exploring </span> <br />
+        <span class="highlight">new opportunities</span>
       </p>
     </div>
 
@@ -60,7 +64,7 @@
       <div class="aboutblock">
         <div id="content-1">
           <p data-aos="fade-right">
-            <span class="highlight bold">10+ years</span> of extensive
+            <span class="highlight bold">11+ years</span> of extensive
             professional experience and skills in
             <span class="highlight bold">programming, project architecture designing and planning, best
               coding practices with keen attention to details.</span>
@@ -95,7 +99,7 @@
             troubleshooting, Quick learning
           </p>
         </div>
-        <div id="content-2"></div>
+        <!-- <div id="content-2"></div> -->
       </div>
     </div>
   </div>
@@ -110,7 +114,7 @@
               <div class="direction-r">
                 <div class="flag-wrapper">
                   <span class="flag highlight bold">Tech Lead - Fullstack developer</span>
-                  <span class="time-wrapper"><span class="time">Dec 2022 - Present</span></span>
+                  <span class="time-wrapper"><span class="time">Mar 2021 - Present</span></span>
                 </div>
                 <div class="desc">
                   <h3>Alliance International Servicing, Thailand</h3>
@@ -139,43 +143,6 @@
                                   react, node, Microsoft Teams, windows console, .net core,
                                   rest api, sql, html, javascript, jquery, css
                                 </p> -->
-                </div>
-              </div>
-            </li>
-
-            <li data-aos="fade-right">
-              <div class="direction-r">
-                <div class="flag-wrapper">
-                  <span class="flag highlight bold">Sr Fullstack developer</span>
-                  <span class="time-wrapper"><span class="time">Mar 2021 - Nov 2022</span></span>
-                </div>
-                <div class="desc">
-                  <h3>Alliance International Servicing, Thailand</h3>
-                  <!-- <p>
-                                              - Develop new and migrate legacy web / window applications
-                                              to automate WD hard disk manufacturing process
-                                            </p>
-                                            <p>
-                                              - Discuss requirements with Process engineers and work
-                                              closely with senior management to understand business
-                                              needs and assess development plan
-                                            </p>
-                                            <p>
-                                              - System Design, Code, perform unit testing, manage UAT,
-                                              document technical and functional specifications
-                                            </p>
-                                            <p>
-                                              - Participate in daily scrums to discuss milestones and
-                                              issues
-                                            </p>
-                                            <p>
-                                              - Follow tasks management for agile development
-                                            </p>
-                                            <p class="top-spacing">
-                                              <span class="highlight bold"> Skills : </span>c#.net, MVC,
-                                              react, node, Microsoft Teams, windows console, .net core,
-                                              rest api, sql, html, javascript, jquery, css
-                                            </p> -->
                 </div>
               </div>
             </li>
@@ -387,7 +354,15 @@
                 </div>
               </div>
             </li>
-
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 data-aos="fade-right">education</h2>
+      <div class="educationblock">
+        <div>
+          <ul class="timeline">
             <!-- item-5 -->
             <li data-aos="fade-right">
               <div class="direction-r">
@@ -459,14 +434,17 @@
           <p>
             <i class="fas fa-mobile-alt"></i>
             <span class="highlight bold">Contact :</span>
-            <a href="tel:+66634011770" class="scroll-link smoothscroll">+66 634011770</a>
+            <a href="tel:+66634011770" class="scroll-link smoothscroll">+91 9819928038</a>
           </p>
         </div>
         <div>
           <p>
+            <i class="fas fa-globe"></i><span class="highlight bold">Location : </span>Mumbai, India
+          </p>
+          <!-- <p>
             <i class="fas fa-globe"></i><span class="highlight bold">Visa status : </span>Thailand Non B
             Visa + Work Permit
-          </p>
+          </p> -->
           <p>
             <i class="far fa-calendar-alt"></i><span class="highlight bold">Date of birth :</span> 12 Feb 1990
           </p>
@@ -504,10 +482,10 @@
       <a href="https://www.linkedin.com/in/rushikeshkorgaonkar" title="linkedin" target="_blank"><i
           class="fab fa-linkedin" aria-hidden="true"></i></a>
     </li>
-    <li>
+    <!-- <li>
       <a href="skype:rushikesh122?chat" target="_blank" title="skype"><i class="fab fa-skype"
           aria-hidden="true"></i></a>
-    </li>
+    </li> -->
   </ul>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -537,5 +515,8 @@
     });
   });
 </script>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+<script src="js/particles.js"></script>
 
 </html>
