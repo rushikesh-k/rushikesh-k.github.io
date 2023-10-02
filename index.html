@@ -8,10 +8,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
   <link rel="manifest" href="icons/site.webmanifest" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/timeline.css" />
-  <link rel="stylesheet" href="css/particles.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css" />
+  <link rel="stylesheet" type="text/css" href="css/output.css">
+<!-- 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css" /> -->
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -513,6 +512,32 @@
         $("nav").removeClass("active");
       }
     });
+
+    function getCurrentScreenSizeInEm() {
+      const screenWidthInPixels = window.innerWidth;
+      const bodyFontSizeInPixels = parseFloat(getComputedStyle(document.body).fontSize);
+
+      // Convert pixels to em using the body font size as a reference
+      const screenWidthInEm = screenWidthInPixels / bodyFontSizeInPixels;
+
+      // Log the current screen size in em
+      console.log(`Screen Width: ${screenWidthInEm}em`);
+
+      // You can also perform actions based on the screen size in em units
+      if (screenWidthInEm >= 48) {
+        // Execute code for screens wider than or equal to 48em
+        console.log("Screen is at least 48em wide.");
+      } else {
+        // Execute code for screens narrower than 48em
+        console.log("Screen is less than 48em wide.");
+      }
+    }
+
+    // Call the function to get the current screen size in em when the page loads
+    window.addEventListener("load", getCurrentScreenSizeInEm);
+
+    // Call the function to get the current screen size in em when the window is resized
+    window.addEventListener("resize", getCurrentScreenSizeInEm);
   });
 </script>
 <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->

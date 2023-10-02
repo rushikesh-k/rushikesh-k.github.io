@@ -1,0 +1,266 @@
+@media (min-width: 40em) and (max-width: 70em) {
+  #intro::after {
+    top: 7em;
+  }
+
+  #content-2::after {
+    top: 28em;
+    /* right: -2rem; */
+  }
+
+  .timeline::after {
+    top: 8em;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 70em) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav ul {
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+  }
+
+  nav .logo {
+    background-size: 2rem;
+    min-width: 3rem;
+    min-height: 1rem;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+  }
+
+  h2 {
+    width: 20%;
+  }
+
+  .section {
+    padding-top: 25vh;
+    padding-bottom: 10vh;
+  }
+
+  .container-1,
+  .container-2,
+  .container-3,
+  .footer-copyright {
+    max-width: 80%;
+    /* flex-direction: row; */
+    justify-content: space-between;
+  }
+
+  .container-4 {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  #intro::after {
+    top: 7em;
+  }
+
+  .container-2 .aboutblock {
+    flex-direction: row;
+  }
+
+  .container-2 #content-2 {
+    background-position: top right;
+  }
+
+  #content-2::after {
+    top: 35em;
+    right: -2rem;
+  }
+
+  .timeline::after {
+    top: 12em;
+  }
+
+  .footer-copyright .container {
+    font-size: 1.2rem;
+    width: 100vw;
+    text-align: center;
+    line-height: 5;
+    padding-top: 0;
+  }
+
+  .intro-social {
+    font-size: 14px;
+    right: 2rem;
+    padding-bottom: 6.6rem;
+  }
+
+  .intro-social li {
+    margin-bottom: 0.7rem;
+  }
+
+  .intro-social::before {
+    height: 5.8rem;
+  }
+
+  .intro-scroll {
+    left: 2rem;
+  }
+
+  .intro-scroll .scroll-link {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 6.6rem;
+  }
+
+  .intro-scroll::before {
+    width: 5.8rem;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav ul {
+    padding: 2rem;
+    padding-right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+  }
+
+  nav .logo {
+    background-size: 3rem;
+    min-width: 5rem;
+    min-height: 3rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+
+  h2 {
+    width: 20%;
+  }
+
+  .section {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+  }
+
+  .container-1,
+  .container-2,
+  .container-3,
+  .footer-copyright {
+    max-width: 80%;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+
+  .container-3.section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .container-4.section {
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+  }
+
+  .container-4 {
+    /* margin: 0 auto; */
+    max-width: 80%;
+  }
+
+  #intro {
+    flex: 4;
+    font-size: 4rem;
+    line-height: 1.257;
+  }
+
+  #intro::after {
+    top: 2.55em;
+  }
+
+  #intro2 {
+    font-size: 2rem;
+    line-height: 1.8;
+    padding-top: 0;
+  }
+
+  /* about */
+
+  #about,
+  #experience,
+  #contact {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+  .container-2 .aboutblock {
+    flex-direction: row;
+  }
+
+  .container-2 #content-2 {
+    background-position: top right;
+  }
+
+  #content-2::after {
+    top: 30em;
+    right: -14rem;
+  }
+
+  .container-2 #content-2:hover {
+    filter: grayscale(60%) contrast(120%) brightness(1.4);
+  }
+
+  .timeline::after {
+    top: 8em;
+  }
+
+  .footer-copyright .container {
+    font-size: 1.4rem;
+    width: 100vw;
+    text-align: center;
+    line-height: 5;
+    padding-top: 0;
+  }
+
+  .intro-social {
+    right: 4rem;
+  }
+
+  .intro-scroll {
+    left: 4rem;
+  }
+
+  .intro-scroll .scroll-link {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (min-width: 22em) and (max-width: 40em) {
+    nav .logo {
+    min-height: 0rem;
+    margin-top: 0rem;
+    margin-left: -1.9rem;
+  }
+
+  nav ul {
+    padding: 2rem 1rem;
+  }
+
+  #particles-js {
+    height: 100%;
+  }
+
+  .experienceblock{
+    padding-bottom: 5em;
+  }
+
+  .contact-grid {
+    font-size: 0.8rem;
+  }
+}

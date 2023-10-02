@@ -1,0 +1,62 @@
+/* -------------------------------------------------------------------
+ * ## intro scroll
+ * ------------------------------------------------------------------- */
+.intro-scroll {
+  z-index: 2;
+  line-height: 12px;
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  position: fixed;
+  -webkit-transform: rotate(-90deg) translate3d(0, 100%, 0);
+  transform: rotate(-90deg) translate3d(0, 100%, 0);
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.intro-scroll .scroll-link {
+  font-size: 12px;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgba(68, 68, 68, 0.8);
+  padding-left: 9.6rem;
+  margin: 0;
+  position: relative;
+}
+
+.intro-scroll .scroll-link:hover,
+.intro-scroll .scroll-link:focus {
+  color: #151515;
+}
+
+.intro-scroll::before {
+  display: block;
+  content: "";
+  background-color: rgba(68, 68, 68, 0.2);
+  width: 7.8rem;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(196, 196, 196);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(235, 97, 115, 0.295);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(128, 126, 120);
+}

@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+}
+
+a {
+  line-height: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: bold;
+  width: 60%;
+  border-bottom: 1px solid currentColor;
+  color: rgba(235, 97, 115, 0.8);
+}
+
+.drawer-icon {
+  display: none;
+}
+
+.dark {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.highlight {
+  color: rgba(238, 238, 238, 0.8);
+}
+
+.highlight.bold {
+  font-weight: bold;
+  color: rgb(235, 97, 115, 0.8);
+}
