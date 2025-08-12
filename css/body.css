@@ -11,7 +11,7 @@ h2 {
   font-weight: bold;
   width: 60%;
   border-bottom: 1px solid currentColor;
-  color: rgba(235, 97, 115, 0.8);
+  color: var(--primary-color, #0f172a);
 }
 
 .drawer-icon {
@@ -28,5 +28,5 @@ h2 {
 
 .highlight.bold {
   font-weight: bold;
-  color: rgb(235, 97, 115, 0.8);
+  color: var(--primary-color, #0f172a);
 }

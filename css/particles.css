@@ -7,12 +7,12 @@
   background-image: url(""); */
   background: #1488cc;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(-20deg, rgb(235, 97, 115) 0%, rgb(109, 77, 238) 100%);
+  background: -webkit-linear-gradient(-20deg, var(--light-pink, #0f172a) 0%, var(--light-purple, #64748b) 100%);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(-20deg, #ffa9a9 0%, #b5a1f7 100%);
+  background: linear-gradient(-20deg, var(--light-pink, #0f172a) 0%, var(--light-purple, #64748b) 100%);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background: linear-gradient(to bottom, #b5a1f7 0%, #ffa9a9 100%);
+  background: linear-gradient(to bottom, var(--light-purple, #64748b) 0%, var(--light-pink, #0f172a) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;

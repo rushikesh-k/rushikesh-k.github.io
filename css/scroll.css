@@ -52,7 +52,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(235, 97, 115, 0.295);
+  background: var(--scrollbar-accent, rgba(15, 23, 42, 0.295));
   border-radius: 4px;
 }
 

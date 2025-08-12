@@ -1,3 +1,19 @@
+:root {
+  /* Default Original Theme */
+  --primary-color: rgba(235, 97, 115, 0.8);
+  --secondary-color: rgb(109, 77, 238);
+  --accent-color: rgba(235, 97, 115, 0.8);
+  --light-pink: #ffa9a9;
+  --light-purple: #b5a1f7;
+  --timeline-accent: rgba(235, 97, 115, 0.6);
+  --scrollbar-accent: rgba(235, 97, 115, 0.295);
+  --nav-text-color: rgba(69, 55, 65, 0.8);
+  --nav-logo-color: rgba(65, 65, 65, 0.8);
+  --intro-text-color: rgba(26, 26, 26, 0.8);
+  --cta-button-bg: linear-gradient(135deg, rgba(235, 97, 115, 0.8), rgba(109, 77, 238, 0.8));
+  --section-heading-color: rgba(235, 97, 115, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
