@@ -174,6 +174,134 @@
   border-bottom: 1px solid currentColor;
 }
 
+/* Enhanced Contact Section Styles */
+.social-section {
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
+
+.social-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.social-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  min-width: 140px;
+  text-align: center;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.social-card a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-card i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-card span {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Resume Card */
+.resume-card {
+  border-color: rgba(235, 97, 115, 0.3);
+}
+
+.resume-card:hover {
+  border-color: rgba(235, 97, 115, 0.8);
+  background: linear-gradient(135deg, rgba(235, 97, 115, 0.05), rgba(235, 97, 115, 0.1));
+}
+
+.resume-card i {
+  color: rgba(235, 97, 115, 0.8);
+}
+
+/* GitHub Card */
+.github-card {
+  border-color: rgba(36, 41, 46, 0.3);
+}
+
+.github-card:hover {
+  border-color: rgba(36, 41, 46, 0.8);
+  background: linear-gradient(135deg, rgba(36, 41, 46, 0.05), rgba(36, 41, 46, 0.1));
+}
+
+.github-card i {
+  color: rgba(36, 41, 46, 0.8);
+}
+
+/* LinkedIn Card */
+.linkedin-card {
+  border-color: rgba(0, 119, 181, 0.3);
+}
+
+.linkedin-card:hover {
+  border-color: rgba(0, 119, 181, 0.8);
+  background: linear-gradient(135deg, rgba(0, 119, 181, 0.05), rgba(0, 119, 181, 0.1));
+}
+
+.linkedin-card i {
+  color: rgba(0, 119, 181, 0.8);
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(235, 97, 115, 0.05), rgba(109, 77, 238, 0.05));
+  border-radius: 20px;
+  border: 1px solid rgba(235, 97, 115, 0.1);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-grid {
+    gap: 1rem;
+  }
+  
+  .social-card {
+    min-width: 120px;
+    padding: 1rem 1.5rem;
+  }
+  
+  .social-card i {
+    font-size: 1.5rem;
+  }
+  
+  .social-card span {
+    font-size: 0.8rem;
+  }
+}
+
 /* footer */
 
 .footer-copyright .container {
