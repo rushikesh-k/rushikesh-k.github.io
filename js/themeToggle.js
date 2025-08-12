@@ -117,10 +117,10 @@ class ThemeManager {
     if (this.themeToggle) {
       if (this.currentTheme === 'original') {
         this.themeToggle.classList.remove('active');
-        this.themeToggle.title = 'Switch to Consulting Theme';
+        this.themeToggle.title = 'Switch to Dark Theme';
       } else {
         this.themeToggle.classList.add('active');
-        this.themeToggle.title = 'Switch to Original Theme';
+        this.themeToggle.title = 'Switch to Light Theme';
       }
     }
   }
